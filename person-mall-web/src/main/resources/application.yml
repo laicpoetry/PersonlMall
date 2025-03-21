@@ -1,0 +1,6 @@
+spring:
+  config:
+    name: person-mall-mvc
+  profiles:
+    active: dev
+
