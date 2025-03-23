@@ -3,7 +3,6 @@ package com.cwb.dao;
 import com.cwb.domain.po.Item;
 import com.cwb.domain.res.PageReq;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;

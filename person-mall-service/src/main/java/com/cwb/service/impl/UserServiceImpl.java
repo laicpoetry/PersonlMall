@@ -1,6 +1,5 @@
 package com.cwb.service.impl;
 
-import com.cwb.common.exception.BadRequestException;
 import com.cwb.common.exception.ForbiddenException;
 import com.cwb.dao.IUserDao;
 import com.cwb.domain.enums.UserStatus;

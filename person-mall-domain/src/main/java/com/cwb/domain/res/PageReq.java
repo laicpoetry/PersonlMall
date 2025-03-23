@@ -1,10 +1,8 @@
 package com.cwb.domain.res;
 
-import cn.hutool.core.util.StrUtil;
 import lombok.Data;
 
 import javax.validation.constraints.Min;
-import java.util.Date;
 
 /**
  * @ClassName：PageReq
