@@ -34,10 +34,18 @@ spring:
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8
 
 mybatis:
   mapper-locations: classpath:/mybatis/mapper/*.xml
   config-location:  classpath:/mybatis/config/mybatis-config.xml
+
 
 ## 支付宝支付 - 沙箱 https://opendocs.alipay.com/common/02kkv7
 #alipay:
@@ -53,4 +61,6 @@ mybatis:
 logging:
   level:
     root: info
+    com.cwb.dao: DEBUG
   config: classpath:logback-spring.xml
+
