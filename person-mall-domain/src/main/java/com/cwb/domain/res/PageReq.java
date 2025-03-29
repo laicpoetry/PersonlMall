@@ -25,7 +25,7 @@ public class PageReq {
     private Integer offset;
 
     //是否升序
-    private Boolean isAsc = true;
+    private Boolean isAsc;
 
     //排序方式
     private String sortBy;

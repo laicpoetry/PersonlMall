@@ -36,5 +36,17 @@
         order by update_time ${sortBy}
         limit #{offset},#{pageSize}
     </select>
+    <select id="getItemListByKeyword" resultType="com.cwb.domain.po.Item">
+        select
+        <include refid="item"/>
+        from item
+        where name like concat('%', #{name}, '%')
+    </select>
+    <select id="getItemListById" resultType="com.cwb.domain.po.Item">
+        select
+        <include refid="item"/>
+        from item
+        where id = #{id}
+    </select>
 
 </mapper>

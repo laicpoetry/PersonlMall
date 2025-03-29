@@ -9,6 +9,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -59,6 +60,23 @@ public class ItemServiceImpl implements IItemService {
         }
 
         return itemList;
+    }
+
+    /**
+     * 搜索商品
+     */
+    //todo  可优化
+    @Override
+    public List<Item> getItemListByKeyword(String name) {
+        return iItemDao.getItemListByKeyword(name);
+    }
+
+    /**
+     * 根据商品id查询 用于商品详情页
+     */
+    @Override
+    public Item getItemListById(String id) {
+        return iItemDao.getItemListById(id);
     }
 
     private void setSortingOrder(PageReq query) {

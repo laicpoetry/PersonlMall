@@ -13,4 +13,8 @@ import java.util.List;
  */
 public interface IItemService {
     List<Item> getItemList(PageReq query);
+
+    List<Item> getItemListByKeyword(String name);
+
+    Item getItemListById(String id);
 }

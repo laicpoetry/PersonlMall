@@ -17,4 +17,8 @@ import java.util.List;
 public interface IItemDao {
      List<Item> getItemList (@RequestBody PageReq pageReq);
 
+
+     List<Item> getItemListByKeyword(String name);
+
+     Item getItemListById(String id);
 }
