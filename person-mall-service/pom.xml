@@ -70,6 +70,11 @@
             <artifactId>person-mall-domain</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- 支付宝沙箱支付对接文档：https://opendocs.alipay.com/common/02kkv7 -->
+        <dependency>
+            <groupId>com.alipay.sdk</groupId>
+            <artifactId>alipay-sdk-java</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.cwb</groupId>
             <artifactId>person-mall-dao</artifactId>

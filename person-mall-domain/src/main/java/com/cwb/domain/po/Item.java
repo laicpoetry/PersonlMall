@@ -2,6 +2,8 @@ package com.cwb.domain.po;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 /**
  * @ClassName：Item
  * @Author: caowenbo
@@ -15,7 +17,7 @@ public class Item {
     //SKU名称
     private String name;
     //价格（分）
-    private Integer price;
+    private BigDecimal price;
     //库存数量
     private Integer stock;
     //商品图片
